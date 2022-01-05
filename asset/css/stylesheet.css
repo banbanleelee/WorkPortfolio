@@ -215,4 +215,10 @@ p {
     nav a:hover {
         border: 0;
     }
+    h2 {
+        font-size: 13px;
+    }
+    .contact-card {
+        font-size: 15px;
+    }
 }
