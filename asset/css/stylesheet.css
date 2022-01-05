@@ -1,27 +1,34 @@
-:root{
-    --background: rgb(54, 54, 54);
-    --text: rgb(228, 228, 227);
-    --highlight: rgb(199, 148, 190);
-    --dark-highlight: rgb(104, 75, 104);
+:root {
+    --grey: rgb(54, 54, 54);
+    --white: rgb(228, 228, 227);
+    --purple: rgb(199, 148, 190);
+    --dark-purple: rgb(104, 75, 104);
+    --purple-gradient: linear-gradient( 135deg, #FFF5C3 10%, #9452A5 100%);
 }
 
 body {
-    background-color: var(--background);
-    color: var(--text);
+    background-color: var(--grey);
+    color: var(--white);
     font-family: "Lora";
-    margin: 1%;
-    padding: 1% 1%;
+    margin: 0;
+    padding: 0;
 }
-
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-image: var(--purple-gradient);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 80px;
 }
 
 h1 {
     font-family: "Ubuntu";
+    color: var(--grey);
+    padding-left: 20px;
 }
 
 nav ul {
@@ -29,44 +36,41 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
-    max-width: 300px;
 }
 
 nav a {
-    background-color: var(--text);
     text-align: center;
-    padding: 10px 15px;
+    padding: 28.5px 25px;
     font-family: "Abel";
     font-weight: bold;
     font-size: large;
+    height: 25px;
 }
 
 nav a:link {
-    color: var(--background);
+    color: var(--white);
     text-decoration: none;
 }
 
 nav a:visited {
-    color: var(--background);
+    color: var(--white);
     text-decoration: none;
 }
 
 nav a:hover{
-    background-color: var(--highlight);
-    color: var(--background);
-    border: 1px solid var(--background);
+    background-color: var(--purple);
+    color: var(--grey);
+    border-left: 1px solid var(--dark-purple);
+    border-right: 1px solid var(--dark-purple);
 }
 
 nav a:active {
-    background-color: var(--dark-highlight);
-    color: var(--text);
-    border: 1px solid var(--background);
+    background-color: var(--dark-purple);
+    color: var(--white);
 }
 
 main {
-    display: flex;
-    flex-flow: row wrap;
+    margin: 0 30px 0 30px;
 }
 
 .top-arrow {
@@ -78,40 +82,96 @@ main {
     height: auto;
 }
 
+.top-arrow:hover {
+    filter: brightness(1.1);
+}
+
+.top-arrow:active{
+    filter: brightness(0.8);
+}
+
 .container {
     display: flex;
-    margin: 10px 0;
+    margin: 30px 0;
 }
 
 .title {
-    min-width: 105px;
-    max-width:105px;
+    box-sizing: border-box;
+    width: 20%;
     margin: 0 0;
 }
 
 .content {
-    border-left: 2px solid var(--text);
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    width: 79%;
+    border-left: 2px solid var(--white);
     padding-left: 35px;
+    justify-content: center;
+    align-items: center;
 }
 
-.container img {
-    width: 100%;
+p {
+    margin: 0 0;    
 }
 
-.info-card {
-    flex: 0 0 25%;
+.highlighted-project {
+    box-sizing: border-box;
+    width: 98%;
+    margin: 0 1% 1% 1%;
+    padding: 1.5%;
+    background-image: var(--purple-gradient);
+}
+
+.other-projects {
+    box-sizing: border-box;
+    width: 48%;
+    margin: 1% 1% 0 1%;
+    padding: 1.5%;
+    background-image: var(--purple-gradient);
+}
+
+.content img:hover {
+    filter: brightness(1.1) saturate(120%);
+}
+
+.contact-card {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 20px 0 0;
+    border-bottom: 2px solid var(--purple);
+}
+
+.container a:hover {
+    font-weight: bold;
+}
+
+.container a:link {
+    color: var(--white);
+    line-height: 2;
+    text-decoration: none;
+}
+
+.container a:visited {
+    color: var(--white);
+    line-height: 2;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
     header,
     main {
       flex-direction: column;
-      align-items: flex-start;
-      padding: 1% 1%;
-      margin: 1%;
     }
-  
-    section {
-      padding-right: 0;
+    header {
+        background-color: var(--white);
+        height:max-content;
     }
-  }
+    nav a {
+        padding: 0 15px;
+    }
+    nav a:hover {
+        border: 0;
+    }
+}
