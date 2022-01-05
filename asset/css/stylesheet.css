@@ -102,7 +102,7 @@ main {
 }
 
 .content {
-    display: flex;
+    display: inline-flex;
     flex-flow: row wrap;
     box-sizing: border-box;
     width: 79%;
@@ -110,25 +110,37 @@ main {
     padding-left: 35px;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 p {
-    margin: 0 0;    
+    margin: 0 0; 
+    width: 70vw;   
 }
 
-.highlighted-project {
-    box-sizing: border-box;
-    width: 98%;
-    margin: 0 1% 1% 1%;
-    padding: 1.5%;
-    background-image: var(--purple-gradient);
+/* The second section: project highlights */
+.project {
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
-.other-projects {
+.large {
+    width: 70vw;
+    height: 400px;
+    object-fit: cover;
+}
+
+.small {
+    width: 35vw;
+    height: 150px;
+    object-fit: cover;
+    margin: 0.2vw;
+}
+
+.content img {
     box-sizing: border-box;
-    width: 48%;
-    margin: 1% 1% 0 1%;
-    padding: 1.5%;
+    padding: 0.2vw;
     background-image: var(--purple-gradient);
 }
 
@@ -136,6 +148,35 @@ p {
     filter: brightness(1.1) saturate(120%);
 }
 
+.text-box {
+    position: absolute;
+    bottom: 12%;
+    left: 0.2vw;
+    background-image: var(--purple-gradient);
+    padding: 2%;
+    color: var(--grey);
+    font-family: "Ubuntu";
+    line-height: 1.6;
+}
+
+.project-title {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.project-subtitle {
+    font-size: small;
+}
+
+.project .project-title {
+    font-size: large;
+}
+
+.project .project-subtitle {
+    font-size: x-small;
+}
+
+/* The third section: contact card */
 .contact-card {
     font-size: 20px;
     text-align: center;
