@@ -126,18 +126,22 @@ p {
 }
 
 .large {
-    width: 70vw;
+    width: 71vw;
     height: 400px;
     object-fit: cover;
-    box-sizing: border-box;
+}
+
+.medium {
+    width: 70vw;
+    height: 150px;
+    margin-top: 1vw;
 }
 
 .small {
     width: 35vw;
     height: 150px;
     object-fit: cover;
-    margin: 3px 3px 3px 0;
-    box-sizing: border-box;
+    margin-right: 1vw;
 }
 
 .content img:hover {
@@ -172,17 +176,17 @@ p {
     border-bottom: 2px solid var(--purple);
 }
 
-.container a:hover {
+.contact-card a:hover {
     font-weight: bold;
 }
 
-.container a:link {
+.contact-card a:link {
     color: var(--white);
     line-height: 2;
     text-decoration: none;
 }
 
-.container a:visited {
+.contact-card a:visited {
     color: var(--white);
     line-height: 2;
     text-decoration: none;
