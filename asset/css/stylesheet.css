@@ -108,40 +108,36 @@ main {
     width: 79%;
     border-left: 2px solid var(--white);
     padding-left: 35px;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: flex-start;
     position: relative;
 }
 
 p {
     margin: 0 0; 
-    width: 70vw;   
+    width: 70vw;
+    font-size: large;   
 }
 
 /* The second section: project highlights */
 .project {
     position: relative;
     display: flex;
-    justify-content: center;
 }
 
 .large {
     width: 70vw;
     height: 400px;
     object-fit: cover;
+    box-sizing: border-box;
 }
 
 .small {
     width: 35vw;
     height: 150px;
     object-fit: cover;
-    margin: 0.2vw;
-}
-
-.content img {
+    margin: 3px 3px 3px 0;
     box-sizing: border-box;
-    padding: 0.2vw;
-    background-image: var(--purple-gradient);
 }
 
 .content img:hover {
@@ -151,7 +147,7 @@ p {
 .text-box {
     position: absolute;
     bottom: 12%;
-    left: 0.2vw;
+    left: 0;
     background-image: var(--purple-gradient);
     padding: 2%;
     color: var(--grey);
@@ -160,19 +156,11 @@ p {
 }
 
 .project-title {
-    font-size: x-large;
+    font-size: large;
     font-weight: bold;
 }
 
 .project-subtitle {
-    font-size: small;
-}
-
-.project .project-title {
-    font-size: large;
-}
-
-.project .project-subtitle {
     font-size: x-small;
 }
 
@@ -222,10 +210,13 @@ p {
     .container {
         margin: 20px 0 20px -20px;
     }
+    .content {
+        padding: 0 0 0 20px;
+    }
     h2 {
-        font-size: 14px;
+        font-size: 17px;
         font-weight: bold;
-        font-family: "Ubuntu";
+        font-family: "Abel";
     }
     .contact-card, p {
         font-size: 15px;
