@@ -209,16 +209,25 @@ p {
         background-color: var(--white);
         height:max-content;
     }
+    h1 {
+        text-align: center;
+        padding: 0;
+    }
     nav a {
         padding: 0 15px;
     }
     nav a:hover {
         border: 0;
     }
+    .container {
+        margin: 20px 0 20px -20px;
+    }
     h2 {
-        font-size: 13px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: "Ubuntu";
     }
-    .contact-card {
+    .contact-card, p {
         font-size: 15px;
-    }
+    }  
 }
