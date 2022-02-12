@@ -125,6 +125,11 @@ p {
     display: flex;
 }
 
+.avatar {
+    width: 100px;
+    height: auto;
+}
+
 .large {
     width: 71vw;
     height: 400px;
@@ -201,6 +206,12 @@ p {
     line-height: 2;
     text-decoration: none;
 }
+
+/* .card {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 70vw;
+} */
 
 @media screen and (max-width: 768px) {
     header,
