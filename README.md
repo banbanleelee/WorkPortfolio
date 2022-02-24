@@ -12,7 +12,7 @@ This project is a work portifolio website that captures my highlights. Each of t
 ```md
 When a user visits this website, he/she will be presented with three sections, including 'About Me', 'Work', and 'Contact Me'.
 ```
-<img src = "./asset/image/overview.png">
+![](./asset/image/overview.PNG)
 
 ## Application Link
 Deployed Page: https://banbanleelee.github.io/WorkPortfolio/
