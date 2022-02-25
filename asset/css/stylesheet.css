@@ -140,6 +140,7 @@ p {
     width: 70vw;
     height: 150px;
     margin-top: 1vw;
+    object-fit: cover;
 }
 
 .small {
@@ -170,8 +171,8 @@ p {
 }
 
 .large .project-subtitle {
-    font-size: large;
-    font-weight: bold;
+    font-size: medium;
+    font-weight: normal;
 }
 
 .project-title {
@@ -207,6 +208,17 @@ p {
     text-decoration: none;
 }
 
+.project-subtitle a {
+    color: var(--dark-purple);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-subtitle a:visited {
+    color: var(--dark-purple);
+    text-decoration: none;
+    font-weight: bold;
+}
 /* .card {
     display: inline-flex;
     justify-content: space-between;
@@ -248,7 +260,10 @@ p {
     } 
     .large {
         height: 200px;
-    } 
+    }
+    .large .project-subtitle {
+        font-size: small;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -289,6 +304,12 @@ p {
         height: 200px;
         padding: 0 2px 0 0;
     } 
+    .large .project-title {
+        font-size: large;
+    }
+    .large .project-subtitle {
+        font-size: x-small;
+    }
     .medium {
         display: flex;
         flex-direction: column;
