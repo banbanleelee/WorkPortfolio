@@ -3,7 +3,7 @@
     --white: rgb(228, 228, 227);
     --purple: rgb(199, 148, 190);
     --dark-purple: rgb(104, 75, 104);
-    --purple-gradient: linear-gradient( 135deg, #FFF5C3 10%, #9452A5 100%);
+    --gradient: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(82,82,82,1) 100%);
 }
 
 body {
@@ -18,7 +18,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: var(--purple-gradient);
+    background-image: var(--gradient);
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -158,7 +158,7 @@ p {
     position: absolute;
     bottom: 12%;
     left: 0;
-    background-image: var(--purple-gradient);
+    background-image: var(--gradient);
     padding: 2%;
     color: var(--grey);
     font-family: "Ubuntu";
